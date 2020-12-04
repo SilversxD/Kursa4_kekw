@@ -1,0 +1,1593 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Container*/
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*Intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/5784810963445155dd980cbf.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.intro__title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: 60px auto;
+    
+    background-color: #333;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+.header {
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__inner {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;    
+}
+
+.header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+/*Navigate*/
+
+.navigate {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navigate__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+
+    transition: color 0.1s linear;
+}
+
+.navigate__link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #ff0000;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity 0.1s linear;
+}
+
+.navigate__link:hover {
+    color: #ff0000;
+}
+
+.navigate__link:hover:after {
+    opacity: 1;
+}
+
+/*Slider*/
+
+.slider {
+    display:inline-flex;
+    justify-content: space-between;
+}
+
+.slider_item {
+    width: 220px;
+    font-weight: 600;
+}
+
+
+/*Button*/
+
+.btn {
+    display: flex;
+    vertical-align: top;
+    padding: 5px 60px;
+    
+    border: 3px solid #fff;
+    
+    font-size: 11px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    max-height: 40px;
+    
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, .4);
+    color: #ff0000;
+}
+
+/* Mikki container */
+
+.mikki {
+    background: url(../img/6387_fon.jpg);
+}
+
+.title__name {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.container__mikki__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__one__left:hover .container__mikki__one__left__text {
+     display: block;
+}
+
+.container__mikki__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 25px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__one__center:hover .container__mikki__one__center__text {
+     display: block;
+}
+
+.container__mikki__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 18px;
+    position: absolute;
+    top: 57px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__one__right:hover .container__mikki__one__right__text {
+     display: block;
+}
+
+.container__mikki__two__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 18px;
+    position: absolute;
+    top: 42px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__two__left:hover .container__mikki__two__left__text {
+     display: block;
+}
+
+.container__mikki__two__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__two__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+    top: 35px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__two__center:hover .container__mikki__two__center__text {
+     display: block;
+}
+
+.container__mikki__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 14.2px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__two__right:hover .container__mikki__two__right__text {
+     display: block;
+}
+
+.container__mikki__three__center {
+    display: inline-block;
+    
+    left: 482px;
+    
+    margin: 0 0 60px 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__mikki__three__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__mikki__three__center:hover .container__mikki__three__center__text {
+     display: block;
+}
+
+/*Princess container*/
+
+.princess {
+    background: url(../img/fon_princess.jpg);
+}
+
+.container__princess__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__princess__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__one__left:hover .container__princess__one__left__text {
+     display: block;
+}
+
+.container__princess__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 18px;
+    position: absolute;
+    top: 16px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__one__center:hover .container__princess__one__center__text {
+     display: block;
+}
+
+.container__princess__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 14.2px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__one__right:hover .container__princess__one__right__text {
+     display: block;
+}
+
+.container__princess__two__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__princess__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+    top: 45px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__two__left:hover .container__princess__two__left__text {
+     display: block;
+}
+
+.container__princess__two__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__two__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__two__center:hover .container__princess__two__center__text {
+     display: block;
+}
+
+.container__princess__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__two__right:hover .container__princess__two__right__text {
+     display: block;
+}
+
+.container__princess__three__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__princess__three__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 25px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__three__left:hover .container__princess__three__left__text {
+     display: block;
+}
+
+.container__princess__three__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__three__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__three__center:hover .container__princess__three__center__text {
+     display: block;
+}
+
+.container__princess__three__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__three__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__three__right:hover .container__princess__three__right__text {
+     display: block;
+}
+
+.container__princess__four__left {
+    display: inline-block;
+    
+    margin: 0 70px 60px 300px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__princess__four__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 15.5px;
+    position: absolute;
+    top: 14px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__four__left:hover .container__princess__four__left__text {
+     display: block;
+}
+
+
+.container__princess__four__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__princess__four__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 36px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__princess__four__right:hover .container__princess__four__right__text {
+     display: block;
+}
+
+/*  Cars  */
+
+.cars {
+    background: url(../img/fon.jpg);
+}
+
+
+.container__cars__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__cars__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    background:rgba(255,255,255, 0.9);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__one__left:hover .container__cars__one__left__text {
+     display: block;
+}
+
+.container__cars__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__one__center:hover .container__cars__one__center__text {
+     display: block;
+}
+
+.container__cars__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 37px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__one__right:hover .container__cars__one__right__text {
+     display: block;
+}
+
+.container__cars__two__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__cars__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__two__left:hover .container__cars__two__left__text {
+     display: block;
+}
+
+.container__cars__two__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__two__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__two__center:hover .container__cars__two__center__text {
+     display: block;
+}
+
+.container__cars__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16.5px;
+    position: absolute;
+    top: 4px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__two__right:hover .container__cars__two__right__text {
+     display: block;
+}
+
+.container__cars__three__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__cars__three__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__three__left:hover .container__cars__three__left__text {
+     display: block;
+}
+
+.container__cars__three__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__three__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__three__center:hover .container__cars__three__center__text {
+     display: block;
+}
+
+.container__cars__three__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__three__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__three__right:hover .container__cars__three__right__text {
+     display: block;
+}
+
+.container__cars__four__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__cars__four__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16.5px;
+    position: absolute;
+    top: 28px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__four__left:hover .container__cars__four__left__text {
+     display: block;
+}
+
+.container__cars__four__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__four__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__four__center:hover .container__cars__four__center__text {
+     display: block;
+}
+
+.container__cars__four__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__cars__four__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top:38px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__cars__four__right:hover .container__cars__four__right__text {
+     display: block;
+}
+
+/* Winni */
+
+.winni {
+    background: url(../img/fon_nemo.jpg);
+}
+
+.container__winni__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__winni__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    top: 45px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__one__left:hover .container__winni__one__left__text {
+     display: block;
+}
+
+.container__winni__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__winni__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    top: 23px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__one__center:hover .container__winni__one__center__text {
+     display: block;
+}
+
+.container__winni__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__winni__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    top: 22px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__one__right:hover .container__winni__one__right__text {
+     display: block;
+}
+
+.container__winni__two__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__winni__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 27px;
+    position: absolute;
+    top: 60px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__two__left:hover .container__winni__two__left__text {
+     display: block;
+}
+
+.container__winni__two__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__winni__two__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 27px;
+    position: absolute;
+    top: 16px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__two__center:hover .container__winni__two__center__text {
+     display: block;
+}
+
+.container__winni__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__winni__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    top: 22px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__two__right:hover .container__winni__two__right__text {
+     display: block;
+}
+
+.container__winni__three__left {
+    display: inline-block;
+    
+    margin: 0 70px 60px 300px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__winni__three__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 28px;
+    position: absolute;
+    top: 55px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__three__left:hover .container__winni__three__left__text {
+     display: block;
+}
+
+.container__winni__three__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__winni__three__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 20px;
+    position: absolute;
+    top: 45px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__winni__three__right:hover .container__winni__three__right__text {
+     display: block;
+}
+
+
+/* Nemo */
+
+.nemo {
+    background: url(../img/fon_med.jpg);
+}
+
+.container__nemo__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 25px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__one__left:hover .container__nemo__one__left__text {
+     display: block;
+}
+
+.container__nemo__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__one__center:hover .container__nemo__one__center__text {
+     display: block;
+}
+
+.container__nemo__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 19px;
+    position: absolute;
+    top: 35px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__one__right:hover .container__nemo__one__right__text {
+     display: block;
+}
+
+.container__nemo__two__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 15px;
+    position: absolute;
+    top: 23px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__two__left:hover .container__nemo__two__left__text {
+     display: block;
+}
+
+.container__nemo__two__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__two__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 13px;
+    position: absolute;
+    top: 20px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__two__center:hover .container__nemo__two__center__text {
+     display: block;
+}
+
+.container__nemo__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__two__right:hover .container__nemo__two__right__text {
+     display: block;
+}
+
+.container__nemo__three__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__three__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 20px;
+    position: absolute;
+    top: 27px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__three__left:hover .container__nemo__three__left__text {
+     display: block;
+}
+
+.container__nemo__three__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__three__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 11px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__three__center:hover .container__nemo__three__center__text {
+     display: block;
+}
+
+.container__nemo__three__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__three__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__three__right:hover .container__nemo__three__right__text {
+     display: block;
+}
+
+.container__nemo__four__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__four__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 17px;
+    position: absolute;
+    top: 25px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__four__left:hover .container__nemo__four__left__text {
+     display: block;
+}
+
+
+.container__nemo__four__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__four__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__four__center:hover .container__nemo__four__center__text {
+     display: block;
+}
+
+.container__nemo__four__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__nemo__four__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 16px;
+    position: absolute;
+    top: 36px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__nemo__four__right:hover .container__nemo__four__right__text {
+     display: block;
+}
+
+
+/* Phines and Ferb   */
+
+.pnf {
+    background: url(../img/fon_pnf.jpg);
+}
+
+.container__pnf__one__left {
+    display: inline-block;
+    
+    margin: 0 0 60px 60px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__pnf__one__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 22px;
+    position: absolute;
+    top: 48px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__pnf__one__left:hover .container__pnf__one__left__text {
+     display: block;
+}
+
+.container__pnf__one__center {
+    display: inline-block;
+    
+    margin: 0 60px;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__pnf__one__center__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__pnf__one__center:hover .container__pnf__one__center__text {
+     display: block;
+}
+
+.container__pnf__one__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__pnf__one__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 25px;
+    position: absolute;
+    top: 9px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__pnf__one__right:hover .container__pnf__one__right__text {
+     display: block;
+}
+
+.container__pnf__two__left {
+    display: inline-block;
+    
+    margin: 0 70px 60px 300px;
+    width: 418px; 
+    height: 418px;
+    
+    position: relative;
+}
+
+.container__pnf__two__left__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 27px;
+    position: absolute;
+    top: 16px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__pnf__two__left:hover .container__pnf__two__left__text {
+     display: block;
+}
+
+.container__pnf__two__right {
+    display: inline-block;
+    
+    margin: 0 40px 0 0;
+    height: 418px;
+    width: 418px;
+    
+    position: relative;
+}
+
+.container__pnf__two__right__text {
+    font-family: 'Inconsolata', monospace;
+    color: #666;
+    font-size: 24px;
+    position: absolute;
+    top: 18px;
+    background:rgba(255,255,255, 0.8);
+    padding:20px;
+    display:none;
+}
+
+.container__pnf__two__right:hover .container__pnf__two__right__text {
+     display: block;
+}
