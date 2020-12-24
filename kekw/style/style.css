@@ -4,7 +4,12 @@ body {
     color: #ffff;
     line-height: 1.6;
     margin: 0;
+    width: 100%;
+    background: url(../img/fon_3.jpg) center;
+    background-size: cover;
+    padding: 20px;
 }
+
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -27,11 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 100px;
     width: 100%;
     height: 100vh;
-    background: url(../img/fon_3.jpg) center no-repeat;
-    background-size: cover;
 }
 
 .intro__title {
@@ -63,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     padding-top: 30px;
-    position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
@@ -86,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Navigate*/
 
-.navigate {
+.menu-list {
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -111,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ff0000;
     opacity: 0;
     
-    position: absolute;
+    
     top: 100%;
     left: 0;
     z-index: 1;
@@ -131,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider {
     display:inline-flex;
-    justify-content: space-between;
+    
+    
 }
 
 .slider_item {
@@ -139,6 +143,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+.follow {
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /*Button*/
 
@@ -163,1434 +175,532 @@ h1, h2, h3, h4, h5, h6 {
     color: #ff0000;
 }
 
-/* Mikki container */
-
-.mikki {
-    background: url(../img/6387_fon.jpg);
-}
-
 .title__name {
     font-family: 'Big Shoulders Inline Text', cursive;
     font-size: 60px;
     font-weight: 700;
-    color: #333;
-    
+    color: #ff0000;
     padding: 40px 0;
     text-align: center;
     
 }
+.nemo .title__name {
+    color: blue;
+}
 
-.container__mikki__one__left {
+.princess .title__name {
+    color: pink;
+}
+.cars .title__name {
+    color: white;
+}
+.winni .title__name {
+    color: yellow;
+}
+.pnf .title__name {
+    color: green;
+}
+
+
+
+
+
+                    /*                      LEFT                    */
+
+
+
+
+.container__mikki__one__left,
+.container__mikki__two__left,
+.container__princess__one__left,
+.container__princess__two__left,
+.container__princess__three__left,
+.container__cars__one__left,
+.container__cars__two__left,
+.container__cars__three__left,
+.container__cars__four__left,
+.container__winni__one__left,
+.container__winni__two__left,
+.container__nemo__one__left,
+.container__nemo__two__left,
+.container__nemo__three__left,
+.container__nemo__four__left,
+.container__pnf__one__left {
     display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
 }
 
-.container__mikki__one__left__text {
+.container__mikki__one__left__text,
+.container__mikki__two__left__text,
+.container__princess__one__left__text,
+.container__princess__two__left__text,
+.container__princess__three__left__text,
+.container__cars__one__left__text,
+.container__cars__two__left__text,
+.container__cars__three__left__text,
+.container__cars__four__left__text,
+.container__winni__one__left__text,
+.container__winni__two__left__text,
+.container__winni__three__left__text,
+.container__nemo__one__left__text,
+.container__nemo__two__left__text,
+.container__nemo__three__left__text,
+.container__nemo__four__left__text,
+.container__pnf__one__left__text,
+.container__pnf__two__left__text,
+.container__mikki__one__center__text,
+.container__mikki__two__center__text,
+.container__mikki__three__center__text,
+.container__princess__one__center__text,
+.container__princess__two__center__text,
+.container__princess__three__center__text,
+.container__princess__four__left__text,
+.container__cars__one__center__text,
+.container__cars__two__center__text,
+.container__cars__three__center__text,
+.container__cars__four__center__text,
+.container__winni__one__center__text,
+.container__winni__two__center__text,
+.container__nemo__one__center__text,
+.container__nemo__two__center__text,
+.container__nemo__three__center__text,
+.container__nemo__four__center__text,
+.container__pnf__one__center__text,
+.container__mikki__one__right__text,
+.container__mikki__two__right__text,
+.container__princess__one__right__text,
+.container__princess__two__right__text,
+.container__princess__three__right__text,
+.container__princess__four__right__text,
+.container__cars__one__right__text,
+.container__cars__two__right__text,
+.container__cars__three__right__text,
+.container__cars__four__right__text,
+.container__winni__one__right__text,
+.container__winni__two__right__text,
+.container__winni__three__right__text,
+.container__nemo__one__right__text,
+.container__nemo__two__right__text,
+.container__nemo__three__right__text,
+.container__nemo__four__right__text,
+.container__pnf__one__right__text,
+.container__pnf__two__right__text {
     font-family: 'Inconsolata', monospace;
     color: #666;
     font-size: 16px;
     position: absolute;
-    top: 10px;
+    bottom: 0;
     background:rgba(255,255,255, 0.8);
     padding:20px;
     display:none;
 }
 
-.container__mikki__one__left:hover .container__mikki__one__left__text {
+.container__mikki__one__left:hover .container__mikki__one__left__text,
+.container__mikki__two__left:hover .container__mikki__two__left__text,
+.container__princess__one__left:hover .container__princess__one__left__text,
+.container__princess__two__left:hover .container__princess__two__left__text,
+.container__princess__three__left:hover .container__princess__three__left__text,
+.container__cars__one__left:hover .container__cars__one__left__text,
+.container__cars__two__left:hover .container__cars__two__left__text,
+.container__cars__three__left:hover .container__cars__three__left__text,
+.container__cars__four__left:hover .container__cars__four__left__text,
+.container__winni__one__left:hover .container__winni__one__left__text,
+.container__winni__two__left:hover .container__winni__two__left__text,
+.container__winni__three__left:hover .container__winni__three__left__text,
+.container__nemo__one__left:hover .container__nemo__one__left__text,
+.container__nemo__two__left:hover .container__nemo__two__left__text,
+.container__nemo__three__left:hover .container__nemo__three__left__text,
+.container__nemo__four__left:hover .container__nemo__four__left__text,
+.container__pnf__one__left:hover .container__pnf__one__left__text,
+.container__pnf__two__left:hover .container__pnf__two__left__text,
+.container__mikki__one__center:hover .container__mikki__one__center__text,
+.container__mikki__two__center:hover .container__mikki__two__center__text,
+.container__mikki__three__center:hover .container__mikki__three__center__text,
+.container__princess__one__center:hover .container__princess__one__center__text,
+.container__princess__two__center:hover .container__princess__two__center__text,
+.container__princess__three__center:hover .container__princess__three__center__text,
+.container__princess__four__left:hover .container__princess__four__left__text,
+.container__cars__one__center:hover .container__cars__one__center__text,
+.container__cars__two__center:hover .container__cars__two__center__text,
+.container__cars__three__center:hover .container__cars__three__center__text,
+.container__cars__four__center:hover .container__cars__four__center__text,
+.container__winni__one__center:hover .container__winni__one__center__text,
+.container__winni__two__center:hover .container__winni__two__center__text,
+.container__nemo__one__center:hover .container__nemo__one__center__text,
+.container__nemo__two__center:hover .container__nemo__two__center__text,
+.container__nemo__three__center:hover .container__nemo__three__center__text,
+.container__nemo__four__center:hover .container__nemo__four__center__text,
+.container__pnf__one__center:hover .container__pnf__one__center__text,
+.container__mikki__one__right:hover .container__mikki__one__right__text,
+.container__mikki__two__right:hover .container__mikki__two__right__text,
+.container__princess__one__right:hover .container__princess__one__right__text,
+.container__princess__two__right:hover .container__princess__two__right__text,
+.container__princess__three__right:hover .container__princess__three__right__text,
+.container__princess__four__right:hover .container__princess__four__right__text,
+.container__cars__one__right:hover .container__cars__one__right__text,
+.container__cars__two__right:hover .container__cars__two__right__text,
+.container__cars__three__right:hover .container__cars__three__right__text,
+.container__cars__four__right:hover .container__cars__four__right__text,
+.container__winni__one__right:hover .container__winni__one__right__text,
+.container__winni__two__right:hover .container__winni__two__right__text,
+.container__winni__three__right:hover .container__winni__three__right__text,
+.container__nemo__one__right:hover .container__nemo__one__right__text,
+.container__nemo__two__right:hover .container__nemo__two__right__text,
+.container__nemo__three__right:hover .container__nemo__three__right__text,
+.container__nemo__four__right:hover .container__nemo__four__right__text,
+.container__pnf__one__right:hover .container__pnf__one__right__text,
+.container__pnf__two__right:hover .container__pnf__two__right__text{
      display: block;
 }
 
-.container__mikki__one__center {
+
+                      /*                       CENTER                  */
+
+
+
+
+
+
+.container__mikki__one__center,
+.container__mikki__two__center,
+.container__princess__one__center,
+.container__princess__two__center,
+.container__princess__three__center,
+.container__cars__one__center,
+.container__cars__two__center,
+.container__cars__three__center,
+.container__cars__four__center,
+.container__winni__one__center,
+.container__winni__two__center,
+.container__nemo__one__center,
+.container__nemo__two__center,
+.container__nemo__three__center,
+.container__nemo__four__center,
+.container__pnf__one__center {
     display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
+    margin-left: 60px;
+    margin-right: 60px;
     position: relative;
 }
 
-.container__mikki__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 25px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
 
-.container__mikki__one__center:hover .container__mikki__one__center__text {
-     display: block;
-}
 
-.container__mikki__one__right {
+                   /*                            RIGHT                    */
+
+.container__mikki__one__right,
+.container__mikki__two__right,
+.container__princess__one__right,
+.container__princess__two__right,
+.container__princess__three__right,
+.container__cars__one__right,
+.container__cars__two__right,
+.container__cars__three__right,
+.container__cars__four__right,
+.container__winni__one__right,
+.container__winni__two__right,
+.container__nemo__one__right,
+.container__nemo__two__right,
+.container__nemo__three__right,
+.container__nemo__four__right,
+.container__pnf__one__right {
     display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
     position: relative;
 }
 
-.container__mikki__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 18px;
-    position: absolute;
-    top: 57px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
 
-.container__mikki__one__right:hover .container__mikki__one__right__text {
-     display: block;
-}
 
-.container__mikki__two__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
+/*                       SOME WHICH LEFT                */
 
-.container__mikki__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 18px;
-    position: absolute;
-    top: 42px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__mikki__two__left:hover .container__mikki__two__left__text {
-     display: block;
-}
-
-.container__mikki__two__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__mikki__two__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 15px;
-    position: absolute;
-    top: 35px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__mikki__two__center:hover .container__mikki__two__center__text {
-     display: block;
-}
-
-.container__mikki__two__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__mikki__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 14.2px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__mikki__two__right:hover .container__mikki__two__right__text {
-     display: block;
-}
-
+/* для кантинки центра низа */
 .container__mikki__three__center {
     display: inline-block;
-    
-    left: 482px;
-    
-    margin: 0 0 60px 60px;
-    height: 418px;
-    width: 418px;
-    
+    left: 35.30%;
     position: relative;
-}
-
-.container__mikki__three__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 18px;
-    position: absolute;
-    top: 30px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__mikki__three__center:hover .container__mikki__three__center__text {
-     display: block;
-}
-
-/*Princess container*/
-
-.princess {
-    background: url(../img/fon_princess.jpg);
-}
-
-.container__princess__one__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__princess__one__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 15px;
-    position: absolute;
-    top: 20px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__one__left:hover .container__princess__one__left__text {
-     display: block;
-}
-
-.container__princess__one__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 18px;
-    position: absolute;
-    top: 16px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__one__center:hover .container__princess__one__center__text {
-     display: block;
-}
-
-.container__princess__one__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 14.2px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__one__right:hover .container__princess__one__right__text {
-     display: block;
-}
-
-.container__princess__two__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__princess__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 15px;
-    position: absolute;
-    top: 45px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__two__left:hover .container__princess__two__left__text {
-     display: block;
-}
-
-.container__princess__two__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__two__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 10px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__two__center:hover .container__princess__two__center__text {
-     display: block;
-}
-
-.container__princess__two__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 22px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__two__right:hover .container__princess__two__right__text {
-     display: block;
-}
-
-.container__princess__three__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__princess__three__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 25px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__three__left:hover .container__princess__three__left__text {
-     display: block;
-}
-
-.container__princess__three__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__three__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__three__center:hover .container__princess__three__center__text {
-     display: block;
-}
-
-.container__princess__three__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__princess__three__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 22px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__three__right:hover .container__princess__three__right__text {
-     display: block;
 }
 
 .container__princess__four__left {
     display: inline-block;
-    
-    margin: 0 70px 60px 300px;
-    width: 418px; 
-    height: 418px;
-    
+    margin: 0 70px 60px 275px;
     position: relative;
 }
-
-.container__princess__four__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 15.5px;
-    position: absolute;
-    top: 14px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__four__left:hover .container__princess__four__left__text {
-     display: block;
-}
-
 
 .container__princess__four__right {
     display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
+    margin: 0 40px 0 10px;
     position: relative;
-}
-
-.container__princess__four__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 36px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__princess__four__right:hover .container__princess__four__right__text {
-     display: block;
-}
-
-/*  Cars  */
-
-.cars {
-    background: url(../img/fon_5.jpg);
-}
-
-
-.container__cars__one__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__cars__one__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 10px;
-    background:rgba(255,255,255, 0.9);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__one__left:hover .container__cars__one__left__text {
-     display: block;
-}
-
-.container__cars__one__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__one__center:hover .container__cars__one__center__text {
-     display: block;
-}
-
-.container__cars__one__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 37px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__one__right:hover .container__cars__one__right__text {
-     display: block;
-}
-
-.container__cars__two__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__cars__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 12px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__two__left:hover .container__cars__two__left__text {
-     display: block;
-}
-
-.container__cars__two__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__two__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 12px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__two__center:hover .container__cars__two__center__text {
-     display: block;
-}
-
-.container__cars__two__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16.5px;
-    position: absolute;
-    top: 4px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__two__right:hover .container__cars__two__right__text {
-     display: block;
-}
-
-.container__cars__three__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__cars__three__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 25px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__three__left:hover .container__cars__three__left__text {
-     display: block;
-}
-
-.container__cars__three__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__three__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__three__center:hover .container__cars__three__center__text {
-     display: block;
-}
-
-.container__cars__three__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__three__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 22px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__three__right:hover .container__cars__three__right__text {
-     display: block;
-}
-
-.container__cars__four__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__cars__four__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16.5px;
-    position: absolute;
-    top: 28px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__four__left:hover .container__cars__four__left__text {
-     display: block;
-}
-
-.container__cars__four__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__four__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__four__center:hover .container__cars__four__center__text {
-     display: block;
-}
-
-.container__cars__four__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__cars__four__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top:38px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__cars__four__right:hover .container__cars__four__right__text {
-     display: block;
-}
-
-/* Winni */
-
-.winni {
-    background: url(../img/fon_nemo.jpg);
-}
-
-.container__winni__one__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__winni__one__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 26px;
-    position: absolute;
-    top: 45px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__one__left:hover .container__winni__one__left__text {
-     display: block;
-}
-
-.container__winni__one__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__winni__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 26px;
-    position: absolute;
-    top: 23px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__one__center:hover .container__winni__one__center__text {
-     display: block;
-}
-
-.container__winni__one__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__winni__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 26px;
-    position: absolute;
-    top: 22px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__one__right:hover .container__winni__one__right__text {
-     display: block;
-}
-
-.container__winni__two__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__winni__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 27px;
-    position: absolute;
-    top: 60px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__two__left:hover .container__winni__two__left__text {
-     display: block;
-}
-
-.container__winni__two__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__winni__two__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 27px;
-    position: absolute;
-    top: 16px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__two__center:hover .container__winni__two__center__text {
-     display: block;
-}
-
-.container__winni__two__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__winni__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 26px;
-    position: absolute;
-    top: 22px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__two__right:hover .container__winni__two__right__text {
-     display: block;
 }
 
 .container__winni__three__left {
     display: inline-block;
-    
     margin: 0 70px 60px 300px;
-    width: 418px; 
-    height: 418px;
-    
     position: relative;
 }
 
-.container__winni__three__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 28px;
-    position: absolute;
-    top: 55px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__three__left:hover .container__winni__three__left__text {
-     display: block;
-}
 
 .container__winni__three__right {
     display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
+    margin: 0 40px 0 0;  
     position: relative;
-}
-
-.container__winni__three__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 20px;
-    position: absolute;
-    top: 45px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__winni__three__right:hover .container__winni__three__right__text {
-     display: block;
-}
-
-
-/* Nemo */
-
-.nemo {
-    background: url(../img/fon_8.jpg);
-}
-
-.container__nemo__one__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__one__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 25px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__one__left:hover .container__nemo__one__left__text {
-     display: block;
-}
-
-.container__nemo__one__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__one__center:hover .container__nemo__one__center__text {
-     display: block;
-}
-
-.container__nemo__one__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 19px;
-    position: absolute;
-    top: 35px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__one__right:hover .container__nemo__one__right__text {
-     display: block;
-}
-
-.container__nemo__two__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 15px;
-    position: absolute;
-    top: 23px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__two__left:hover .container__nemo__two__left__text {
-     display: block;
-}
-
-.container__nemo__two__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__two__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 13px;
-    position: absolute;
-    top: 20px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__two__center:hover .container__nemo__two__center__text {
-     display: block;
-}
-
-.container__nemo__two__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__two__right:hover .container__nemo__two__right__text {
-     display: block;
-}
-
-.container__nemo__three__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__three__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 20px;
-    position: absolute;
-    top: 27px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__three__left:hover .container__nemo__three__left__text {
-     display: block;
-}
-
-.container__nemo__three__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__three__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 11px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__three__center:hover .container__nemo__three__center__text {
-     display: block;
-}
-
-.container__nemo__three__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__three__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 10px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__three__right:hover .container__nemo__three__right__text {
-     display: block;
-}
-
-.container__nemo__four__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__four__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 17px;
-    position: absolute;
-    top: 25px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__four__left:hover .container__nemo__four__left__text {
-     display: block;
-}
-
-
-.container__nemo__four__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__four__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 20px;
-    position: absolute;
-    top: 14px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__four__center:hover .container__nemo__four__center__text {
-     display: block;
-}
-
-.container__nemo__four__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__nemo__four__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 16px;
-    position: absolute;
-    top: 36px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__nemo__four__right:hover .container__nemo__four__right__text {
-     display: block;
-}
-
-
-/* Phines and Ferb   */
-
-.pnf {
-    background: url(../img/fon_pnf.jpg);
-}
-
-.container__pnf__one__left {
-    display: inline-block;
-    
-    margin: 0 0 60px 60px;
-    width: 418px; 
-    height: 418px;
-    
-    position: relative;
-}
-
-.container__pnf__one__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 22px;
-    position: absolute;
-    top: 48px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__pnf__one__left:hover .container__pnf__one__left__text {
-     display: block;
-}
-
-.container__pnf__one__center {
-    display: inline-block;
-    
-    margin: 0 60px;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__pnf__one__center__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 26px;
-    position: absolute;
-    top: 20px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__pnf__one__center:hover .container__pnf__one__center__text {
-     display: block;
-}
-
-.container__pnf__one__right {
-    display: inline-block;
-    
-    margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
-    position: relative;
-}
-
-.container__pnf__one__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 25px;
-    position: absolute;
-    top: 9px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__pnf__one__right:hover .container__pnf__one__right__text {
-     display: block;
 }
 
 .container__pnf__two__left {
     display: inline-block;
-    
     margin: 0 70px 60px 300px;
-    width: 418px; 
-    height: 418px;
-    
     position: relative;
 }
 
-.container__pnf__two__left__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 27px;
-    position: absolute;
-    top: 16px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
-}
-
-.container__pnf__two__left:hover .container__pnf__two__left__text {
-     display: block;
-}
 
 .container__pnf__two__right {
     display: inline-block;
-    
     margin: 0 40px 0 0;
-    height: 418px;
-    width: 418px;
-    
     position: relative;
 }
 
-.container__pnf__two__right__text {
-    font-family: 'Inconsolata', monospace;
-    color: #666;
-    font-size: 24px;
-    position: absolute;
-    top: 18px;
-    background:rgba(255,255,255, 0.8);
-    padding:20px;
-    display:none;
+
+
+.follow {
+    padding: 20px; 
+    border-radius: 15px;
 }
 
-.container__pnf__two__right:hover .container__pnf__two__right__text {
-     display: block;
+.follow input {
+    width: 400px;
+    margin: 35px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    border-top: none; border-left: none; border-right: none; 
+    font-family: "Euclid Flex Trial", sans-serif;
+    font-size: large; 
+    outline: none; 
+    color: #fff;
 }
 
 
+
+@media (max-width: 1462px) {
+    .container__mikki__one__right,
+    .container__princess__one__right,
+    .container__princess__three__right {
+        margin-left: 40px;
+        margin-right: 20px;
+    }    
+    .container__princess__three__left {
+        margin-left: 43px;
+    }
+    .container__princess__four__left {
+        margin-left: 40px;
+    }
+    .container__mikki__two__center,
+    .container__princess__two__center {
+        margin-left: 40px;
+    }
+    .container__mikki__three__center,
+    .container__mikki__three__center{
+        display: flex;
+    }
+
+}
+/* Для планш */
+
+@media (max-width: 1210px) {
+
+    
+    .slider {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    
+    .slider .btn {
+        display: inline-block;
+        
+        text-align: center;
+        width: 250px;
+    }
+    
+}
+
+@media (max-width: 1040px) {
+    .container__mikki__two__right {
+        font-size: 9px;
+    }
+    .container__mikki__one__left,
+    .container__mikki__two__left,
+    .container__princess__one__left,
+    .container__princess__two__left,
+    .container__princess__three__left,
+    .container__cars__one__left,
+    .container__cars__two__left,
+    .container__cars__three__left,
+    .container__cars__four__left,
+    .container__winni__one__left,
+    .container__winni__two__left,
+    .container__nemo__one__left,
+    .container__nemo__two__left,
+    .container__nemo__three__left,
+    .container__nemo__four__left,
+    .container__pnf__one__left,
+    .container__mikki__one__center,
+    .container__mikki__two__center,
+    .container__princess__one__center,
+    .container__princess__two__center,
+    .container__princess__three__center,
+    .container__cars__one__center,
+    .container__cars__two__center,
+    .container__cars__three__center,
+    .container__cars__four__center,
+    .container__winni__one__center,
+    .container__winni__two__center,
+    .container__nemo__one__center,
+    .container__nemo__two__center,
+    .container__nemo__three__center,
+    .container__nemo__four__center,
+    .container__pnf__one__center,
+    .container__mikki__one__right,
+    .container__mikki__two__right,
+    .container__princess__one__right,
+    .container__princess__two__right,
+    .container__princess__three__right,
+    .container__cars__one__right,
+    .container__cars__two__right,
+    .container__cars__three__right,
+    .container__cars__four__right,
+    .container__winni__one__right,
+    .container__winni__two__right,
+    .container__nemo__one__right,
+    .container__nemo__two__right,
+    .container__nemo__three__right,
+    .container__nemo__four__right,
+    .container__pnf__one__right {
+        display: inline-table;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container__mikki__three__center {
+        display: inline-table;
+        margin-right: 70%;
+    }
+    .container__princess__four__left,
+     .container__princess__four__right,
+    .container__winni__three__left,
+    .container__pnf__two__left {
+        display: inline-table;
+        margin-left: 100px;
+        left: 15%;
+    }
+    .container__princess__four__right,
+    .container__winni__three__right,
+    .container__pnf__two__right {
+        display: inline-table;
+        margin-left: 100px;
+        left: 15%;
+         margin-top: -30px;
+    }
+    
+}
+
+/* Для тлф */
+
+@media (max-width: 700px) {
+    .slider {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider .btn {
+        display: inline-block;
+        width: 250px;
+    }
+    
+}
+
+@media (max-width: 880px) {
+    .intro__title {
+        font-size: 25px;
+    }
+}
+
+/* Burger menu */
+
+@media (max-width: 730px) {
+    
+    
+    .menu {
+        position: fixed; 
+        right: 0;top: 0; 
+        z-index: 9; 
+        width: 40%; 
+        height: 100vh; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background-color: #333;
+        transition: 0.5s; 
+        transform: translateX(100%); 
+    }
+
+    /* Анимация меню */
+    .menu-active {
+        transform: translateX(0%);
+    }
+
+   
+    .menu-list {
+        display: flex;
+        justify-content: space-around; 
+        height: 50%; 
+        flex-direction: column; 
+    }
+
+    .menu-list a {
+        text-transform: uppercase;
+    }
+    
+    .menu-btn {
+        width: 50px; 
+        height: 50px;
+        background-color: #333; 
+        position: absolute; 
+        border-radius: 50%; 
+        left: -100px; 
+        top: 10px;
+        box-shadow: 0 0 17px 0.5px black; 
+    }
+
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        position: absolute;
+        top: 50%; margin-top: -1px;
+        left: 50%; margin-left: -10px;
+        width: 20px;
+        height: 2.5px;
+        background-color: #fff;
+    } 
+
+    .menu-btn span::before,
+    .menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.5s;
+    } 
+
+    
+    .menu-btn span::before {transform: translateY(-5px);} 
+    .menu-btn span::after {transform: translateY(5px);} 
+
+    .menu-btn-active span:before {transform: rotate(-45deg);}
+    .menu-btn-active span:after {transform: rotate(45deg);}
+    .menu-btn-active span {height: 0px;} /* Улетает за блок */
+
+    
+    .content-active {transform: translateX(30%);}
+
+}
 
